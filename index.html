@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Completa el formulario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hola!</h1>
+      <p class="text">
+        Te animas a ingresar tus datos a este sitio inseguro solo por
+        diversión?🤠
+      </p>
+    </header>
+    <section class="form-container">
+      <h2>Completa el formulario</h2>
+      <form class="form-register">
+        <label for="first-name" class="label">Nombre</label>
+        <input
+          type="text"
+          class="input"
+          name="first-name"
+          id="first-name"
+          placeholder="John"
+          required
+        />
+
+        <label for="last-name" class="label">Apellido</label>
+        <input
+          type="text"
+          class="input"
+          name="last-name"
+          id="last-name"
+          placeholder="Doe"
+          required
+        />
+
+        <label for="user-name" class="label">Nombre de usuario</label>
+        <input
+          type="text"
+          class="input"
+          name="user-name"
+          id="user-name"
+          placeholder="jonhdoe"
+          required
+        />
+
+        <label for="password" class="label">Contraseña</label>
+        <input
+          type="password"
+          class="input"
+          name="password"
+          id="password"
+          required
+        />
+
+        <label for="confirm-password" class="label"
+          >Confirme su contraseña</label
+        >
+        <input
+          type="password"
+          class="input"
+          name="confirm-password"
+          id="confirm-password"
+          required
+        />
+
+        <label for="birthday" class="label">Fecha de Nacimiento</label>
+        <input
+          type="date"
+          class="date"
+          name="birthday"
+          id="birthday"
+          placeholder="Ingrese su fecha de nacimiento"
+          required
+        />
+
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox-input" />
+          Quiero suscribirme
+        </label>
+
+        <input type="submit" class="submit" value="Registrar" />
+        <p class="warnings"></p>
+      </form>
+    </section>
+    <script src="registerValidation.js"></script>
+  </body>
+</html>
