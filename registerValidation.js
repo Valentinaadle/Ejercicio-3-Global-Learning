@@ -38,6 +38,11 @@ form.addEventListener("submit", (e) => {
     mistakes = true;
   }
 
+  if (/\d/.test(lastName.value)) {
+    warnings += "⚠️ El campo Apellido no puede contener números. <br>";
+    mistakes = true;
+  }
+
   if (userName.value == "") {
     warnings += "⚠️ El campo Nombre de usuario es obligatorio. <br>";
     mistakes = true;
